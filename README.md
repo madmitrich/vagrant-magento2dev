@@ -1,19 +1,11 @@
 # Vagrant for Magento 2 developing
 This vagrant box with environment optimized for Magento 2 developing.
 Including:
- - Debian Jessie 8.6 x64
- - Puppet 3.7.2
- - Percona 5.7.19-17
- - Apache 2.4.20
- - module HTTP/2
- - PHP 7.0.11
- - Xdebug 2.4.1
- - Composer 1.2.1
- - Adminer 4.2.5
- - NodeJS 6.6.0
- - NPM 3.10.8
- - Grunt 1.2.0
- - Gulp 3.9.1
+ - Ubuntu18.04, 
+ - PHP7.2,
+ - MariaDB 10.3.15,
+ - XDebug 2.6.0
+
  
  ## HOW TO USE
  Change configs in _vagrant/config.yaml_ file:
@@ -85,3 +77,8 @@ Including:
  For login as _www-data_ user next command:
  
  `sudo su -l www-data -s /bin/bash`
+ 
+ ### XDebug enabling
+ To enable the XDebug, uncomment the **;zend_extension=/usr/lib/php/20170718/xdebug.so** line
+ in the **/etc/php/7.2/mods-available/xdebug.ini**
+
