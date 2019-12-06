@@ -5,7 +5,7 @@ Including:
  - PHP7.2,
  - MariaDB 10.3.15,
  - XDebug 2.6.0
-
+ - Composer
  
  ## HOW TO USE
  Change configs in _vagrant/config.yaml_ file:
