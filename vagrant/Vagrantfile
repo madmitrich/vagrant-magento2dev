@@ -27,7 +27,7 @@ Vagrant.configure("2") do |config|
 
   # Machine memory settings
   config.vm.provider "virtualbox" do |vb|
-    vb.customize ["modifyvm", :id, "--memory", configValues['memory_size']]
+    vb.customize ["modifyvm", :id, "--memory", configValues['memory_size'], "--uartmode1", "disconnected"]
   end
 
   # Sync folders settings
